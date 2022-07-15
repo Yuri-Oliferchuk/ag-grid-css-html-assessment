@@ -5,7 +5,7 @@
     --bg-color-4: rgb(65, 65, 65);
     --grid-color: #999999;
     --main-text-color: rgb(0, 0, 0);
-  }
+}
 
 .ag-theme-alpine .ag-root-wrapper {
     border: 1px solid var(--grid-color);
@@ -52,19 +52,14 @@
     --ag-foreground-color: var(--main-text-color);
     --ag-header-foreground-color: var(--main-text-color);
     --ag-header-background-color: var(--bg-color-2);
-
     --ag-odd-row-background-color: rgb(0, 0, 0, 0.02);
     --ag-selected-row-background-color: rgb(32 , 159, 255, 0.2);
-
     --ag-checkbox-background-color: var(--bg-color-1);
     --ag-checkbox-checked-color: var(--bg-color-3);
     --ag-checkbox-unchecked-color: var(--bg-color-4);
     --ag-checkbox-indeterminate-color: var(--bg-color-3);
-
     --ag-control-panel-background-color: var(--bg-color-2);
-
     --ag-header-column-separator-display: block;
-
     --ag-font-family: 'Lato', sans-serif;
     --ag-font-size: 17px;
 }
@@ -73,6 +68,7 @@
     height: 100%;
     top: 0;
 }
+
 .ag-header-group-text {
     font-weight: bold;
 }
@@ -88,10 +84,12 @@
 .ag-theme-alpine .ag-header {
     font-family: 'Lato', sans-serif;
 }
+
 .ag-theme-alpine .ag-header-group-cell {
     font-weight: normal;
     font-size: 22px;
 }
+
 .ag-theme-alpine .ag-header-cell {
     font-size: 18px;
 }
