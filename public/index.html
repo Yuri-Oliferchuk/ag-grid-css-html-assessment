@@ -21,8 +21,8 @@
             display: grid;
             grid-template-areas: "sidebar header"
                                  "sidebar root";
-            grid-template-columns: 1fr 7fr;
-            grid-template-rows: 80px auto;
+            grid-template-columns: 80px 1fr;
+            grid-template-rows: 62px auto;
             justify-content: center;
             align-items: center;
         }
@@ -38,7 +38,7 @@
         .sidebar {
             grid-area: sidebar;
             height: 100%;
-            background-image: linear-gradient(135.86deg, #51690a 1.46%, #b6d800 100%) !important;
+            background-image: linear-gradient(135.86deg, #22406c 1.46%, #81aae7 100%) !important;
             display: flex;
             flex-direction: column;
             justify-content: top;
@@ -61,39 +61,28 @@
         .table {
             grid-area: root;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.12);
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
             margin: 0px;
         }
         #root {
             width: 100%;
+            height: 100%;
         }
         .container-fluid {
-            height: 650px !important;
+            height: 100% !important;
         }
     </style>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 
-
-
 <main class="main">
     <header class="header">
         <div><- Menu</div>
-        <div>LOGO</div>
+        <div>My account</div>
     </header>
     <section class="sidebar">
-        <h1>LOGO</h1>
-        <div>
-            <ul>
-                <li>Home</li>
-                <li>Table</li>
-                <li>Info</li>
-                <li>Contacts</li>
-            </ul>
-        </div>
+        <img src="./pic.png" >
     </section>
     <!-- This is  where ag-grid table is dynamically injected by js do not remove or edit this element -->
     <div class="table">
@@ -101,7 +90,6 @@
     </div>
     <!-- ./fin ag-grid -->
 </main>
-
 
 </body>
 </html>
