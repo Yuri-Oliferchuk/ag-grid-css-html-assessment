@@ -12,69 +12,97 @@
     <script defer="defer" src="/static/js/main.bbcc11bb.js"></script>
     <link href="/static/css/main.b420d29a.css" rel="stylesheet">
     <link href="/static/css/ag-grid-custom-theme.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <style>
-        .header {
-            background-color: aqua;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            margin: 5px 12px;
-        }
         .main {
-            height: 700px;
+            height: 100vh;
+            display: grid;
+            grid-template-areas: "sidebar header"
+                                 "sidebar root";
+            grid-template-columns: 1fr 7fr;
+            grid-template-rows: 80px auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .header {
+            grid-area: header;
+            background-color: rgb(255, 255, 255);
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-between;
+            padding: 0px 30px;
             align-items: center;
-            margin: auto 12px;
-        }
-        .footer {
-            background-color: aqua;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 5px 12px;
         }
         .sidebar {
-            background-color: aqua;
+            grid-area: sidebar;
             height: 100%;
-            width: 15%;
+            background-image: linear-gradient(135.86deg, #51690a 1.46%, #b6d800 100%) !important;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            justify-content: top;
+            align-items: center;
+        }
+        .sidebar h1 {
+            padding-top: 15px;
+            font-size: 3.5em;
+            color: white;
+            font-weight: 200%;
+        }
+        .sidebar ul {
+            padding-top: 30px;
+            font-weight: 200%;
+        }
+        .sidebar ul li{
+            font-size: 1.5em;
+            color: white;
+        }
+        
+        .table {
+            grid-area: root;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.12);
+            display: flex;
             justify-content: center;
             align-items: center;
+            padding: 20px;
             margin: 0px;
         }
-        .container-fluid {
-            height: 700px !important;
-        }
         #root {
-            width: 85%;
+            width: 100%;
+        }
+        .container-fluid {
+            height: 650px !important;
         }
     </style>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 
 
-<header class="header">
-    <h1>HEADER</h1>
-</header>
 
 <main class="main">
+    <header class="header">
+        <div><- Menu</div>
+        <div>LOGO</div>
+    </header>
     <section class="sidebar">
-        <h1>BAR</h1>
+        <h1>LOGO</h1>
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>Table</li>
+                <li>Info</li>
+                <li>Contacts</li>
+            </ul>
+        </div>
     </section>
     <!-- This is  where ag-grid table is dynamically injected by js do not remove or edit this element -->
-    <div id="root"></div>
+    <div class="table">
+        <div id="root"></div>
+    </div>
     <!-- ./fin ag-grid -->
 </main>
 
-<footer class="footer">
-    <h1>FOOTER</h1>
-</footer>
 
 </body>
 </html>
