@@ -14,11 +14,67 @@
     <link href="/static/css/ag-grid-custom-theme.css" rel="stylesheet">
 </head>
 <body>
+    <style>
+        .header {
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 12px;
+        }
+        .main {
+            height: 700px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: auto 12px;
+        }
+        .footer {
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 12px;
+        }
+        .sidebar {
+            background-color: aqua;
+            height: 100%;
+            width: 15%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+        }
+        .container-fluid {
+            height: 700px !important;
+        }
+        #root {
+            width: 85%;
+        }
+    </style>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 
 
-<!-- This is  where ag-grid table is dynamically injected by js do not remove or edit this element -->
-<div id="root"></div>
-<!-- ./fin ag-grid -->
+<header class="header">
+    <h1>HEADER</h1>
+</header>
+
+<main class="main">
+    <section class="sidebar">
+        <h1>BAR</h1>
+    </section>
+    <!-- This is  where ag-grid table is dynamically injected by js do not remove or edit this element -->
+    <div id="root"></div>
+    <!-- ./fin ag-grid -->
+</main>
+
+<footer class="footer">
+    <h1>FOOTER</h1>
+</footer>
+
 </body>
 </html>
