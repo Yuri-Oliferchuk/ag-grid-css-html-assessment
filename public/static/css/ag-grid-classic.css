@@ -1,0 +1,138 @@
+:root {
+    --classic-bg-color-1: white;
+    --classic-bg-color-2: #f8f8f8;
+    --classic-bg-color-3: rgb(161, 161, 161);
+    --classic-bg-color-4: rgb(65, 65, 65);
+    --classic-bg-color-5: #f0f2f5;
+    --classic-grid-color: #999999;
+    --classic-main-text-color: rgb(0, 0, 0);
+    
+    --classic-ag-font-family: 'Lato', cursive;
+}
+.ag-theme-classic div::-webkit-scrollbar {
+    width: .5em;
+    height: .5em;
+}
+.ag-theme-classic div::-webkit-scrollbar-button {
+    height: 0px;
+    width: 0px;
+}
+.ag-theme-classic div::-webkit-scrollbar-track-piece {
+    background: #888
+}
+.ag-theme-classic div::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+}
+
+.ag-theme-classic .ag-root-wrapper {
+    border: 1px solid var(--classic-grid-color);
+    border-radius: 10px;
+}
+
+.ag-theme-classic .ag-column-drop-horizontal, 
+.ag-theme-classic .ag-column-drop-horizontal span {
+    background-color: var(--classic-bg-color-5);
+    color: black;
+}
+
+.ag-theme-classic .ag-tool-panel-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.ag-theme-classic .ag-react-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ag-theme-classic .ag-status-bar {
+    color: var(--classic-main-text-color);
+}
+
+.ag-theme-classic .ag-group-title-bar {
+    background-color: var(--classic-bg-color-2);
+}
+
+.ag-theme-classic .ag-filter-toolpanel-header span, 
+.ag-theme-classic .ag-column-select-column-label {
+    color: var(--classic-main-text-color);
+}
+
+.ag-theme-classic input[class^=ag-], 
+.ag-theme-classic select[class^=ag-], 
+.ag-theme-classic textarea[class^=ag-], 
+.ag-theme-classic .ag-virtual-list-container {
+    background-color: var(--classic-bg-color-1);
+}
+
+.ag-theme-classic button.ag-side-button-button:hover {
+    color: var(--classic-grid-color);
+}
+
+.ag-theme-classic {
+    --ag-selected-tab-underline-color: var(--classic-main-text-color);
+    --ag-header-height: 30px;
+    --ag-background-color: var(--classic-bg-color-1);
+    --ag-foreground-color: var(--classic-main-text-color);
+    --ag-header-foreground-color: var(--classic-main-text-color);
+    --ag-header-background-color: var(--classic-bg-color-2);
+    --ag-odd-row-background-color: rgb(0, 0, 0, 0.02);
+    --ag-selected-row-background-color: rgb(32 , 159, 255, 0.2);
+    --ag-checkbox-background-color: var(--classic-bg-color-1);
+    --ag-checkbox-checked-color: var(--classic-bg-color-3);
+    --ag-checkbox-unchecked-color: var(--classic-bg-color-4);
+    --ag-checkbox-indeterminate-color: var(--classic-bg-color-3);
+    --ag-control-panel-background-color: var(--classic-bg-color-2);
+    --ag-header-column-separator-display: block;
+    --ag-font-size: 17px;
+}
+
+/* table all fonts */
+.ag-theme-classic .ag-theme-alpine {
+    font-family: var(--classic-ag-font-family);
+}
+
+.ag-theme-classic .ag-header-cell-resize:after, 
+.ag-theme-classic .ag-header-cell-resize {
+    height: 100%;
+    top: 0;
+}
+
+.ag-theme-classic .ag-header-group-text {
+    font-weight: bold;
+}
+
+.ag-theme-classic .ag-icon-grip:before {
+    content: none;
+}
+
+.ag-theme-classic .container-fluid {
+    padding: 0px;
+}
+
+.ag-theme-classic .container-fluid div {
+    padding-top: 0px;
+}
+
+.ag-theme-classic .ag-header-group-cell {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.ag-theme-classic .ag-header-cell {
+    font-size: 18px;
+}
+
+/* toolbar content */
+.ag-theme-classic .ag-tool-panel-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* status content */
+.ag-theme-classic .ag-react-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

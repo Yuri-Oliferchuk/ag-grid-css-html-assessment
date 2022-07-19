@@ -1,0 +1,190 @@
+:root {    
+    --violet-color1: rgba(1,12,63,.7);
+    --violet-bg-color-toolbar: rgba(1,12,63,.9);
+    --violet-color-inputs: rgba(70, 76, 104, 0.7);
+    --violet-hover-color: #999999;
+    --violet-main-text-color: white;
+    --violet-border-color: black;
+    --violet-rows-border-color: black;
+    --violet-input-border-color: rgb(122, 122, 122);
+    --violet-checked-color: rgb(3, 12, 49);
+    --violet-unchecked-color: rgb(29, 0, 0);
+
+    --violet-ag-font-family: 'Merienda One', cursive;
+}
+.ag-theme-violet div::-webkit-scrollbar {
+    width: .5em;
+    height: .5em;
+}
+.ag-theme-violet div::-webkit-scrollbar-button {
+    height: 0px;
+    width: 0px;
+}
+.ag-theme-violet div::-webkit-scrollbar-track-piece {
+    background: #888
+}
+.ag-theme-violet div::-webkit-scrollbar-thumb {
+    background: rgb(1,12,63);
+}
+
+/* table global borders */
+.ag-theme-violet .ag-root-wrapper {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* group table header */
+.ag-theme-violet .ag-column-drop-horizontal {
+    background-color: var(--violet-color1);
+}
+
+/* group table header text */
+.ag-theme-violet .ag-column-drop-horizontal, .ag-theme-violet .ag-column-drop-horizontal span {
+    color: white;
+}
+
+/* table status bar */
+.ag-theme-violet .ag-status-bar {
+    color: var(--violet-main-text-color);
+}
+
+/* table toolbar filter group */
+.ag-theme-violet .ag-group-title-bar {
+    background-color: var(--violet-color1);
+}
+
+/* table toolbar columns ???? */
+.ag-theme-violet .ag-filter-toolpanel-header span, 
+.ag-theme-violet .ag-column-select-column-label {
+    color: var(--violet-main-text-color);
+}
+
+/* input fields */
+.ag-theme-violet input[class^=ag-], 
+.ag-theme-violet select[class^=ag-], 
+.ag-theme-violet textarea[class^=ag-], 
+.ag-theme-violet .ag-virtual-list-container,
+.ag-theme-violet .form-control {
+    background-color: var(--violet-color-inputs);
+}
+
+/* table toolbar sidebar buttons hover */
+.ag-theme-violet button.ag-side-button-button:hover {
+    color: var(--violet-hover-color);
+}
+
+/* main theme settings */
+.ag-theme-violet {
+    --ag-selected-tab-underline-color: white;
+    --ag-background-color: var(--violet-color1);
+    --ag-foreground-color: var(--violet-main-text-color);
+
+    --ag-border-color: var(--violet-border-color);
+    --ag-secondary-border-color: var(--violet-rows-border-color);
+    --ag-input-border-color: var(--violet-input-border-color);
+    --ag-row-border-color: var(--violet-rows-border-color);
+
+    --ag-header-background-color: var(--violet-color1);
+    --ag-header-foreground-color: var(--violet-main-text-color);
+
+    --ag-odd-row-background-color: rgb(0, 0, 0, 0.03);
+    --ag-selected-row-background-color: rgb(32 , 159, 255, 0.3);
+
+    --ag-checkbox-background-color: var(--violet-hover-color);
+    --ag-checkbox-checked-color: var(--violet-checked-color);
+    --ag-checkbox-unchecked-color: var(--violet-border-color);
+    --ag-checkbox-indeterminate-color: var(--violet-unchecked-color);
+
+    --ag-control-panel-background-color: var(--violet-bg-color-toolbar);
+
+    --ag-header-column-resize-handle-display: block;
+    --ag-header-column-resize-handle-height: 25%;
+    --ag-header-column-resize-handle-width: 1px;
+    --ag-header-column-resize-handle-color: var(--violet-border-color);
+}
+
+/* table all fonts */
+.ag-theme-violet .ag-theme-alpine {
+    font-family: var(--violet-ag-font-family);
+}
+
+/* cell value display and gaps */
+.ag-theme-violet .ag-cell-value span {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+/* sell format */
+.ag-theme-violet .ag-cell {
+    padding-left: 10px !important;
+    font-size: 12px;
+}
+
+/* modal windows */
+.ag-theme-violet .modal-content {
+    background-color: var(--violet-bg-color-toolbar);
+}
+
+/* modal inputs */
+.ag-theme-violet input[type^=button] {
+    background-color: var(--violet-color1);
+    color: var(--violet-main-text-color);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 0px 5px;
+}
+
+/* table buttons */
+.ag-theme-violet .btn.btn-light.btn-sm {
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+
+/* table buttons icon */
+.ag-theme-violet .btn.btn-light.btn-sm i {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* header separator type */
+.ag-theme-violet .ag-theme-violet .ag-header-cell-resize:after, .ag-theme-violet .ag-header-cell-resize {
+    height: 100%;
+    top: 0;
+}
+
+/* icon cell separator */
+.ag-theme-violet .ag-theme-violet .ag-icon-grip:before {
+    content: none;
+}
+
+.ag-theme-violet .ag-header-group-text {
+    font-weight: bold;
+}
+
+.ag-theme-violet .ag-theme-violet .ag-header-group-cell {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.ag-theme-violet .ag-theme-violet .ag-header-cell {
+    font-size: 18px;
+}
+
+/* toolbar content */
+.ag-theme-violet .ag-tool-panel-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* status content */
+.ag-theme-violet .ag-react-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* global tabel field */
+.ag-theme-violet .container-fluid {
+    padding: 20px;
+}

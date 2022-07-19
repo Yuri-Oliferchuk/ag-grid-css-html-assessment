@@ -1,0 +1,259 @@
+:root {    
+    --modern-color1: #005d7c;
+    --modern-main-bg-color: #90908f;
+    --modern-header-bg-color: #c2beb4;
+    --modern-bg-color-toolbar: #005d7d;
+    --modern-color-inputs: #c2beb4;
+    --modern-hover-color: #999999;
+    --modern-main-text-color: black;
+    --modern-header-text-color: white;
+    --modern-border-color: rgba(129, 129, 129, 0.7);
+    --modern-rows-border-color: rgb(129, 129, 129);
+    --modern-input-border-color: rgb(129, 129, 129);
+    --modern-checked-color: rgb(3, 12, 49);
+    --modern-unchecked-color: rgb(29, 0, 0);
+    --modern-cell-gradient-color1: #005d7d;
+    --modern-cell-gradient-color2: #fdfbfb;
+
+    --modern-ag-font-family: 'Sriracha', cursive;
+}
+.ag-theme-modern div::-webkit-scrollbar {
+    width: .5em;
+    height: .5em;
+}
+.ag-theme-modern div::-webkit-scrollbar-button {
+    height: 0px;
+    width: 0px;
+}
+.ag-theme-modern div::-webkit-scrollbar-track-piece {
+    background: #888
+}
+.ag-theme-modern div::-webkit-scrollbar-thumb {
+    /* background: #002a38; */
+    background: #002a38;
+}
+
+/* top header menu */
+.ag-theme-modern .ag-header-group-cell {
+    background-color: #c39843;
+    box-shadow: inset 0px 0px 14px rgb(0 0 0 / 50%);
+    color: var(--modern-header-text-color);
+    outline: 11px solid var(--modern-header-bg-color) !important;
+    outline-offset: -6px;
+    border-radius: 9px;
+}
+
+/* back line of header submenu */
+.ag-theme-modern .ag-header-row.ag-header-row-column {
+    background-color: var(--modern-header-bg-color);
+}
+
+/* top header submenu */
+.ag-theme-modern .ag-header-cell[role^="columnheader"] {
+    background-color: #c39843;
+    box-shadow: inset 0px 0px 14px rgb(0 0 0 / 50%);
+    color: var(--modern-header-text-color);
+    outline: 11px solid var(--modern-header-bg-color);
+    outline-offset: -6px;
+    border-radius: 9px;
+}
+
+/* table global borders */
+.ag-theme-modern .ag-root-wrapper {
+    border: 1px solid var(--modern-main-bg-color);
+    border-radius: 7px;
+}
+
+/* group table header */
+.ag-theme-modern .ag-column-drop-horizontal {
+    background-color: #c39843;
+    box-shadow: inset 0px 0px 14px rgb(0 0 0 / 50%);
+    color: var(--modern-header-text-color);
+    outline: 6px solid var(--modern-header-bg-color);
+    outline-offset: -6px;
+}
+
+/* group table header text */
+.ag-theme-modern .ag-column-drop-horizontal, 
+.ag-theme-modern .ag-column-drop-horizontal span {
+    color: white;
+}
+
+/* table status bar */
+.ag-theme-modern .ag-status-bar {
+    background-color: var(--modern-cell-gradient-color2);
+    color: var(--modern-main-text-color);
+}
+
+/* table toolbar filter group */
+.ag-theme-modern .ag-group-title-bar {
+    background-color: var(--modern-color1);
+}
+
+/* table toolbar columns ???? */
+.ag-theme-modern .ag-filter-toolpanel-header span, 
+.ag-theme-modern .ag-column-select-column-label {
+    color: var(--modern-main-text-color);
+}
+
+/* input fields */
+.ag-theme-modern input[class^=ag-], 
+.ag-theme-modern select[class^=ag-], 
+.ag-theme-modern textarea[class^=ag-], 
+.ag-theme-modern .ag-virtual-list-container,
+.ag-theme-modern .form-control {
+    background-color: var(--modern-color-inputs);
+    border-radius: 7px !important;
+}
+
+/* filter button */
+.ag-theme-modern .ag-floating-filter-button-button {
+    border: 1px solid var(--modern-border-color) !important;
+    border-radius: 50%;
+    background-image: linear-gradient(135deg, #008daa 1.46%, #005775 100%) !important;
+    background-color: white !important;
+    width: 30px !important;
+    height: 30px !important;
+}
+
+/* table toolbar sidebar buttons hover */
+.ag-theme-modern button.ag-side-button-button:hover {
+    color: var(--modern-hover-color);
+}
+
+/* main theme settings */
+.ag-theme-modern {
+    --ag-selected-tab-underline-color:  #002a38;
+    --ag-background-color: var(--modern-color1);
+    --ag-foreground-color: var(--modern-main-text-color);
+    --ag-border-color: var(--modern-border-color);
+    --ag-secondary-border-color: var(--modern-rows-border-color);
+    --ag-input-border-color: var(--modern-input-border-color);
+    --ag-row-border-color: var(--modern-rows-border-color);
+    --ag-header-background-color: var(--modern-color1);
+    --ag-header-foreground-color: var(--modern-main-text-color);
+    --ag-odd-row-background-color: rgb(0, 0, 0, 0.03);
+    --ag-selected-row-background-color: rgb(32 , 159, 255, 0.3);
+    --ag-checkbox-background-color: var(--modern-hover-color);
+    --ag-checkbox-checked-color: var(--modern-checked-color);
+    --ag-checkbox-unchecked-color: var(--modern-border-color);
+    --ag-checkbox-indeterminate-color: var(--modern-unchecked-color);
+    --ag-control-panel-background-color: var(--modern-bg-color-toolbar);
+    --ag-header-column-resize-handle-display: block;
+    --ag-header-column-resize-handle-height: 25%;
+    --ag-header-column-resize-handle-width: 1px;
+    --ag-header-column-resize-handle-color: var(--modern-border-color);
+}
+
+/* table all fonts */
+.ag-theme-modern .ag-theme-alpine {
+    font-family: var(--modern-ag-font-family);
+}
+
+/* cell value display and gaps */
+.ag-theme-modern .ag-cell-value span {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+/* sell format */
+.ag-theme-modern .ag-cell {
+    padding-left: 10px !important;
+    font-size: 15px;
+}
+
+/* modal windows */
+.ag-theme-modern .modal-content {
+    background-color: var(--modern-bg-color-toolbar);
+}
+
+/* modal inputs */
+.ag-theme-modern input[type^=button] {
+    background-color: var(--modern-cell-gradient-color2);
+    color: var(--modern-main-text-color);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 0px 5px;
+}
+
+/* table buttons */
+.ag-theme-modern .btn.btn-light.btn-sm {
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+
+/* table buttons icon */
+.ag-theme-modern .btn.btn-light.btn-sm i {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* header separator type */
+.ag-theme-modern .ag-header-cell-resize:after, 
+.ag-theme-modern .ag-header-cell-resize {
+    height: 100%;
+    top: 0;
+}
+
+/* icon cell separator */
+.ag-theme-modern .ag-icon-grip:before {
+    content: none;
+}
+
+.ag-theme-modern .ag-header-group-text {
+    font-weight: bold;
+}
+
+.ag-theme-modern .ag-header-group-cell {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.ag-theme-modern .ag-header-cell {
+    font-size: 18px;
+}
+
+/* toolbar content */
+.ag-theme-modern .ag-tool-panel-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* status content */
+.ag-theme-modern .ag-react-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* global tabel field */
+.ag-theme-modern .container-fluid {
+    padding: 0px;
+}
+
+/* global table div */
+.ag-theme-modern .container-fluid.ag-theme-modern div[style^="height: 100%;"] {
+    padding-left: 0px !important;
+}
+
+/* odd lines */
+.ag-theme-modern .ag-row-even {
+    background-color: rgba(0,0,0,0.05) !important;
+}
+
+/* gorizontal scroll back part */
+.ag-theme-modern .ag-body-horizontal-scroll {
+    background-color: var(--modern-cell-gradient-color2);
+}
+
+/* main table background */
+.ag-theme-modern .ag-body-viewport {
+    background-color: white !important;
+    background-image: linear-gradient(180deg, var(--modern-cell-gradient-color1) 1.46%, var(--modern-cell-gradient-color2) 100%) !important;
+}
+
+/* toolbar columns list background */
+.ag-theme-modern .ag-virtual-list-container.ag-column-select-virtual-list-container {
+    background-color: var(--modern-cell-gradient-color2);
+    opacity: 0.9;
+}
