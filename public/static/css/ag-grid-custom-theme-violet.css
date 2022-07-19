@@ -12,6 +12,20 @@
 
     --ag-font-family: 'Merienda One', cursive;
 }
+::-webkit-scrollbar {
+    width: .5em;
+    height: .5em;
+}
+::-webkit-scrollbar-button {
+    height: 0px;
+    width: 0px;
+}
+::-webkit-scrollbar-track-piece {
+    background: #888
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(1,12,63);
+}
 
 /* table global borders */
 .ag-theme-alpine .ag-root-wrapper {
