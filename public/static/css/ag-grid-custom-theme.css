@@ -176,6 +176,11 @@ input[type^=button] {
     background-color: rgba(0,0,0,0);
 }
 
+/* table buttons icon */
+.btn.btn-light.btn-sm i {
+    color: rgba(0, 0, 0, 0.7);
+}
+
 /* header separator type */
 .ag-theme-alpine .ag-header-cell-resize:after, .ag-theme-alpine .ag-header-cell-resize {
     height: 100%;
