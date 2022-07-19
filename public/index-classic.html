@@ -12,41 +12,37 @@
     <script defer="defer" src="/static/js/main.bbcc11bb.js"></script>
     <link href="/static/css/main.b420d29a.css" rel="stylesheet">
     <link href="/static/css/ag-grid-custom-theme.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <style>
-        ::-webkit-scrollbar {
-            width: .5em;
-            height: .5em;
-        }
-        ::-webkit-scrollbar-button {
-            height: 0px;
-            width: 0px;
-        }
-        ::-webkit-scrollbar-track-piece {
-            background: #888
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #002a38;
-        }
         .main {
             height: 100vh;
             display: grid;
-            background-color: #90908f;
-            grid-template-areas: "sidebar root";
-            grid-template-columns: 110px 1fr;
+            grid-template-areas: "sidebar header"
+                                 "sidebar root";
+            grid-template-columns: 80px 1fr;
+            grid-template-rows: 62px auto;
             justify-content: center;
+            align-items: center;
+        }
+        .header {
+            grid-area: header;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0px 30px;
             align-items: center;
         }
         .sidebar {
             grid-area: sidebar;
             height: 100%;
+            background-image: linear-gradient(135.86deg, #22406c 1.46%, #81aae7 100%) !important;
             display: flex;
             flex-direction: column;
             justify-content: top;
             align-items: center;
-            padding: 5px 0px;
         }
         .sidebar h1 {
             padding-top: 15px;
@@ -61,17 +57,6 @@
         .sidebar ul li{
             font-size: 1.5em;
             color: white;
-        }  
-        .sidebar .menu2{
-            height: 100%;
-            width: 100px;
-            background-image: linear-gradient(180deg, #005d7d 1.46%, #fdfbfb 100%) !important;
-            display: flex;
-            align-items: flex-start;
-            margin: 5px 0px;
-            padding-top: 10px;
-            justify-content: center;
-            border-radius: 7px;
         }        
         .table {
             grid-area: root;
@@ -92,15 +77,16 @@
 <noscript>You need to enable JavaScript to run this app.</noscript>
 
 <main class="main">
+    <header class="header">
+        <div><- Menu</div>
+        <div>My account</div>
+    </header>
     <section class="sidebar">
-        <img src="./pic/menu_icon.jpg" >
-        <div class="menu2">
-            <img src="./pic/menu_2_icons.png" >
-        </div>
+        <img src="./pic.png" >
     </section>
     <!-- This is  where ag-grid table is dynamically injected by js do not remove or edit this element -->
     <div class="table">
-        <div id="root" class="ag-theme-alpine"></div>
+        <div id="root"></div>
     </div>
     <!-- ./fin ag-grid -->
 </main>
